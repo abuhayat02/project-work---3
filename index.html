@@ -20,6 +20,19 @@
             font-family: "Manrope", sans-serif;
         }
     </style>
+    <!-- colors with tailwind css  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                "design-color": '#F4F4F4',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body class="primary">
@@ -94,7 +107,8 @@
                 A barn house of this design has a <br>striking appearance
             </h1>
             <p class="font-medium text-center text-xs py-5">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal <br>accents, and large windows that flood the space with natural light.
             </p>
             <div>
                 <button class=" bg-lime-300 py-3 px-4 rounded-full flex flex-row">
@@ -110,8 +124,53 @@
     </header>
 
     <!-- start main section  -->
-    <main>
+    <main class=" my-16">
 
+        <!-- design section  -->
+        <section class="bg-design-color ">
+           
+           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 container m-auto py-20 relative">
+            
+            <div class="flex flex-col justify-between">
+                <div>
+                    <button class=" py-1 px-1 border shadow-xl rounded-full flex flex-row">
+                        <div class="rounded-full">
+                            <img class="text-white rotate-45 " src="./icons/circle-arrow.svg" alt="">
+                        </div>
+                        <a class="no-underline font-bold mx-2">
+                            About us
+                        </a>
+                    </button>
+                </div>
+                <h1 class="font-bold text-5xl">We design thoughtful,<br>liveable spaces</h1>
+                <p class="font-medium text-sm text-gray-400">The barn house captivates with its blend of rustic charm and <br>modern sophistication, featuring
+                    weathered wood, sleek metal accents.
+                </p>
+                <div class="flex flex-row px-6 py-8 rounded-md bg-white gap-4">
+                    <div class="flex justify-center items-center">
+                        <img src="./assets/residential.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-xl py-2">Residential</h1>
+                        <p class="text-xs font-mediumb py-2 text-gray-400">The barn house captivates with its blend <br>of rustic charm and modern.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row px-6 py-8 rounded-md bg-white gap-4">
+                    <div class="flex justify-center items-center">
+                        <img src="./assets/residential.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-extrabold text-xl py-2">Residential</h1>
+                        <p class="text-xs font-mediumb py-2 text-gray-400">The barn house captivates with its blend <br>of rustic charm and modern.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex justify-end items-end">
+                <img src="./assets/Rectangle.png" alt="">
+            </div>
+           </div>
+        </section>
     </main>
 
     <!-- start footer section  -->
