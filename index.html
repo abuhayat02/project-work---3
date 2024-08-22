@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        .primary{
+        .primary {
             font-family: "Manrope", sans-serif;
         }
     </style>
@@ -24,8 +24,89 @@
 
 <body class="primary">
     <!-- start header section  -->
-    <header>
+    <header class="container m-auto">
+        <nav class="w-full">
+            <div class="navbar flex flex-row justify-between">
+                <div class="navbar-center  flex flex-row">
+                    <img class="text-white md:flex" src="./icons/circle-arrow.svg" alt="">
+                    <a class="px-2 text-3xl font-bold ">Rinterio</a>
+                </div>
 
+                <!-- phone veiw  -->
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class=" -ml-40 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 left-0 w-52 p-2 shadow absolute">
+                        <li><a>Home</a></li>
+
+                        <li><a>Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- desktop veiw  -->
+                <div class=" hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-gray-500 md:hover:text-black font-semibold">Home</a></li>
+                        <li><a class="text-gray-500 md:hover:text-black font-semibold">Services</a></li>
+                        <li><a class="text-gray-500 md:hover:text-black font-semibold" href="">Portfolio</a></li>
+                        <li><a class="text-gray-500 md:hover:text-black font-semibold" href="">Blogs</a></li>
+                        <li><a class="text-gray-500 md:hover:text-black font-semibold" href="">Contact Us</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="hidden md:flex flex-row gap-3 ">
+                    <div class="border rounded-full p-2 ">
+                        <img src="./icons/search.svg" alt="">
+                    </div>
+                    <div class="border rounded-full p-2 ">
+                        <img src="./icons/shopping-cart.svg" alt="">
+                    </div>
+                    <div class=" bg-lime-300 py-3 px-4 rounded-full flex flex-row">
+                        <a class="no-underline font-bold mx-2">
+                            Book Consult
+                        </a>
+                        <div class="rounded-full">
+                            <img class="text-white" src="./icons/circle-arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- bran hous section  -->
+
+        <section class=" flex flex-col items-center">
+            <div>
+                <img src="./assets/banner.png" alt="">
+            </div>
+            <h1 class="font-extrabold text-3xl md:text-6xl text-center py-4">
+                A barn house of this design has a <br>striking appearance
+            </h1>
+            <p class="font-medium text-center text-xs py-5">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.
+            </p>
+            <div>
+                <button class=" bg-lime-300 py-3 px-4 rounded-full flex flex-row">
+                    <a class="no-underline font-bold mx-2">
+                        View Details
+                    </a>
+                    <div class="rounded-full">
+                        <img class="text-white" src="./icons/circle-arrow.svg" alt="">
+                    </div>
+                </button>
+            </div>
+        </section>
     </header>
 
     <!-- start main section  -->
