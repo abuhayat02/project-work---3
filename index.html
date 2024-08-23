@@ -33,7 +33,8 @@
                         "card-three": "#A4DAC3",
                         "card-four": "#77AAEA",
                         "btn-normal-color": "#eefcdf",
-                        "secandary-color": "#ABEF5F"
+                        "secandary-color": "#ABEF5F",
+                        "footer-color": "#1C1C1C",
                     }
                 }
             }
@@ -57,14 +58,12 @@
                     <a class="px-2 text-3xl font-bold ">Rinterio</a>
                 </div>
 
-                <!-- phone veiw  -->
                 <div class="dropdown lg:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost ">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
                     </div>
                     <ul tabindex="0"
                         class=" -ml-40 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 left-0 w-52 p-2 shadow absolute">
@@ -78,7 +77,7 @@
                     </ul>
                 </div>
 
-              
+
                 <div class=" hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class="text-gray-500 md:hover:text-black font-semibold">Home</a></li>
@@ -292,7 +291,8 @@
 
                 <div class="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-5 gap-2">
 
-                    <div class="flex bg-white flex-col md:flex-row gap-4 items-center  border rounded-2xl p-6 col-span-6  lg:col-span-3">
+                    <div
+                        class="flex bg-white flex-col md:flex-row gap-4 items-center  border rounded-2xl p-6 col-span-6  lg:col-span-3">
                         <img class="w-full" src="./assets/img1.png" alt="">
 
                         <div class="flex flex-col justify-start gap-6">
@@ -359,7 +359,7 @@
                     <img class="p-6 bg-white w-full h-full col-span-5 md:col-span-3 lg:col-span-1 border rounded-2xl"
                         src="./assets/img5.png" alt="">
 
-                        <img class="p-6 bg-white w-full  h-full col-span-5 md:col-span-3 md:flex lg:hidden border rounded-2xl"
+                    <img class="p-6 bg-white w-full  h-full col-span-5 md:col-span-3 md:flex lg:hidden border rounded-2xl"
                         src="./assets/img3.png" alt="">
 
 
@@ -541,11 +541,16 @@
                     weathered wood, sleek metal accents.
                 </p>
                 <div class="grid md:grid-cols-2 grid-cols-1 gap-4 mt-5">
-                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="text" placeholder="Fast Name *">
-                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="text" placeholder="Last Name *">
-                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="number" placeholder="Phone Nember *">
-                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="email" placeholder="Your Email *">
-                    <textarea class="outline-none text-xs font-medium md:col-span-2 py-4 w-full px-2 rounded-md" type="text" rows="8" placeholder="last name *"></textarea>
+                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="text"
+                        placeholder="Fast Name *">
+                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="text"
+                        placeholder="Last Name *">
+                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="number"
+                        placeholder="Phone Nember *">
+                    <input class="outline-none text-xs font-medium py-4 w-full px-2 rounded-full" type="email"
+                        placeholder="Your Email *">
+                    <textarea class="outline-none text-xs font-medium md:col-span-2 py-4 w-full px-2 rounded-md"
+                        type="text" rows="8" placeholder="last name *"></textarea>
                 </div>
                 <div class=" bg-secandary-color py-2 my-5 px-4 rounded-full items-center justify-center flex flex-row">
                     <a class="no-underline font-bold mx-2">
@@ -564,7 +569,52 @@
     </main>
 
     <!-- start footer section  -->
-    <footer>
+    <footer class="bg-footer-color ">
+        <div class="container m-auto py-16 flex flex-col gap-6 border-b-2 border-gray-600">
+            <div class="flex flex-row items-center justify-center">
+                <div class="rounded-full bg-secandary-color text-black p-1 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+                <a class="px-2 text-3xl font-bold text-white ">Rinterio</a>
+            </div>
+            <p class="text-gray-500 font-medium text-sm text-center">
+                The barn house captivates with its blend of rustic charm and modern sophistication,<br>featuring
+                weathered wood, sleek metal accents.
+
+            </p>
+            <div>
+                <ul class="flex flex-col md:flex-row items-center justify-center">
+                    <li class="list-none mx-3 px-4 py-3"><a class="no-underline font-semibold text-white text-sm"
+                            href="">Home</a></li>
+                    <li class="list-none mx-3 px-4 py-3"><a class="no-underline font-semibold text-white text-sm"
+                            href="">Services</a></li>
+                    <li class="list-none mx-3 px-4 py-3"><a class="no-underline font-semibold text-white text-sm"
+                            href="">Portfolio</a></li>
+                    <li class="list-none mx-3 px-4 py-3"><a class="no-underline font-semibold text-white text-sm"
+                            href="">Blogs</a></li>
+                    <li class="list-none mx-3 px-4 py-3"><a class="no-underline font-semibold text-white text-sm"
+                            href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class=" bg-lime-300 w-fit m-auto py-2 px-4 rounded-full items-center justify-center flex flex-row">
+                <a class="no-underline font-bold mx-2">
+                    Book Consult
+                </a>
+                <div class="rounded-full text-white p-1 bg-black">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
 
     </footer>
 </body>
