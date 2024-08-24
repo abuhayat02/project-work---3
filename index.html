@@ -35,6 +35,11 @@
                         "btn-normal-color": "#eefcdf",
                         "secandary-color": "#ABEF5F",
                         "footer-color": "#1C1C1C",
+                    },
+
+                    backgroundImage: {
+                        'footer-image': "url('../assets/bg.jpg')",
+                        
                     }
                 }
             }
@@ -60,10 +65,12 @@
 
                 <div class="dropdown lg:hidden">
                     <div tabindex="0" role="button" class="btn btn-ghost ">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                          </svg>
-                          
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
                     </div>
                     <ul tabindex="0"
                         class=" -ml-40 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 left-0 w-52 p-2 shadow absolute">
@@ -150,12 +157,13 @@
     <!-- start main section  -->
     <main class=" my-16">
 
-        <!-- design section  -->
+        <!-- about design section  -->
         <section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 container m-auto py-20 px-6 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 container m-auto py-20 px-6 relative">
 
-                <div class="flex flex-col justify-between md:items-start items-center gap-4">
+                <div class="flex flex-col justify-between lg:items-start items-center gap-4 relative">
+                    <img class="absolute hidden -top-14 -left-10 lg:flex" src="./assets/Vector.png" alt="">
                     <div>
                         <button class=" py-1 px-1 border shadow-xl rounded-full flex flex-row">
                             <div class="rounded-full rotate-45  ">
@@ -170,9 +178,9 @@
                             </a>
                         </button>
                     </div>
-                    <h1 class="font-bold text-4xl md:text-start text-center">We design thoughtful,<br>liveable spaces
+                    <h1 class="font-bold text-4xl lg:text-start text-center">We design thoughtful,<br>liveable spaces
                     </h1>
-                    <p class="font-medium text-sm md:text-start text-center text-gray-400">The barn house captivates
+                    <p class="font-medium text-sm lg:text-start text-center text-gray-400">The barn house captivates
                         with its blend of rustic charm and <br>modern sophistication, featuring
                         weathered wood, sleek metal accents.
                     </p>
@@ -201,7 +209,7 @@
 
                 </div>
                 <div class="flex justify-end items-end">
-                    <img src="./assets/Rectangle.png" alt="">
+                    <img class="w-full" src="./assets/Rectangle.png" alt="">
                 </div>
             </div>
         </section>
@@ -289,7 +297,7 @@
                     weathered wood, sleek metal accents.
                 </p>
 
-                <div class="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-5 gap-2">
+                <div class="grid grid-cols-5 md:grid-cols-6 lg:grid-cols-5 py-10 gap-2">
 
                     <div
                         class="flex bg-white flex-col md:flex-row gap-4 items-center  border rounded-2xl p-6 col-span-6  lg:col-span-3">
@@ -369,7 +377,7 @@
 
         <!-- Articles section  -->
 
-        <section class="container m-auto">
+        <section class="container m-auto py-20">
             <button class=" bg-lime-50 py-1 px-1 m-auto  rounded-full flex flex-row">
                 <div class="rounded-full rotate-45  ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -520,7 +528,7 @@
 
         <!-- Discuss section  -->
 
-        <section class="bg-[url('../assets/bg.jpg')] bg-no-repeat bg-cover">
+        <section class="bg-footer-image bg-no-repeat bg-cover">
             <div class="container m-auto py-10 px-2">
                 <button class=" bg-lime-50 py-1 px-1 m-auto  rounded-full flex flex-row">
                     <div class="rounded-full rotate-45  ">
@@ -569,8 +577,8 @@
     </main>
 
     <!-- start footer section  -->
-    <footer class="bg-footer-color ">
-        <div class="container m-auto py-16 flex flex-col gap-6 border-b-2 border-gray-600">
+    <footer class="bg-footer-color py-8 ">
+        <div class="container m-auto py-10 flex flex-col gap-6 border-b-2 border-gray-600">
             <div class="flex flex-row items-center justify-center">
                 <div class="rounded-full bg-secandary-color text-black p-1 ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
